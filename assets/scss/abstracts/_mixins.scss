@@ -1,0 +1,53 @@
+@use "variables" as *;
+
+// Container mixin
+@mixin container {
+  max-width: $container-max-width;
+  margin: 0 auto;
+  padding: 0 $spacing-md;
+
+  @media (max-width: $breakpoint-md) {
+    padding: 0 $spacing-sm;
+  }
+}
+
+// Base button styles
+@mixin button-base {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: $spacing-sm $spacing-lg;
+  border: none;
+  border-radius: $border-radius;
+  font-family: $font-family-primary;
+  font-size: $font-size-button;
+  font-weight: $font-weight-medium;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:focus {
+    outline: 2px solid rgba(0, 0, 0, 0.2);
+    outline-offset: 2px;
+  }
+}
+
+// Responsive typography
+@mixin responsive-font($desktop-size, $mobile-size: null) {
+  font-size: $desktop-size;
+
+  @if $mobile-size {
+    @media (max-width: $breakpoint-md) {
+      font-size: $mobile-size;
+    }
+  }
+}
+
+// Section between spacing
+@mixin section-spacing {
+  padding: $spacing-xxl 0;
+
+  @media (max-width: $breakpoint-md) {
+    padding: $spacing-xl 0;
+  }
+}

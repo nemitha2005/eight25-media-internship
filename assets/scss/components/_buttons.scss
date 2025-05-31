@@ -1,0 +1,23 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+@use "sass:color";
+
+.btn {
+  @include button-base;
+
+  // Primary button
+  &--primary {
+    background-color: $color-accent;
+    color: $color-white;
+
+    &:hover {
+      background-color: color.adjust($color-accent, $lightness: -10%);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba($color-accent, 0.3);
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+  }
+}

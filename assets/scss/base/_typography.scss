@@ -1,0 +1,32 @@
+@use "../abstracts/variables" as *;
+
+body {
+  font-family: $font-family-primary;
+  font-weight: $font-weight-normal;
+  color: $color-primary;
+  line-height: $line-height-normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: $font-weight-bold;
+  line-height: $line-height-tight;
+}
+
+.text-heading {
+  color: $color-heading;
+  font-weight: $font-weight-bold;
+}
+
+.text-body {
+  color: $color-primary;
+  font-weight: $font-weight-normal;
+}
+
+.text-muted {
+  color: $color-secondary;
+}
