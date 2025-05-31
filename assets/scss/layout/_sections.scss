@@ -43,7 +43,8 @@
     font-weight: $font-weight-normal;
     color: $color-secondary;
     line-height: $line-height-normal;
-    margin-bottom: $spacing-xl;
+    max-width: $subtitle-max-width;
+    margin: 0 auto $spacing-xl auto;
   }
 
   &__icons {

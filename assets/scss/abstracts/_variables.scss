@@ -1,8 +1,8 @@
 // COLORS
 $color-heading: #000743;
 $color-primary: #000000;
-$color-secondary: #666666;
-$color-accent: #ff4757;
+$color-secondary: #000743;
+$color-accent: #ff3366;
 $color-white: #ffffff;
 $color-text-light: #888888;
 
@@ -17,13 +17,13 @@ $font-weight-bold: 700;
 
 // FONT SIZES
 $font-size-hero: 3.75rem;
-$font-size-subtitle: 1.125rem;
+$font-size-subtitle: 1.25rem;
 $font-size-button: 1rem;
 
 // LINE HEIGHTS
 $line-height-tight: 1.1;
-$line-height-normal: 1.5;
-$line-height-relaxed: 1.6;
+$line-height-normal: 1.6;
+$line-height-button: 1.2;
 
 // SPACING
 $spacing-xs: 0.5rem;
@@ -33,10 +33,15 @@ $spacing-lg: 2rem;
 $spacing-xl: 3rem;
 $spacing-xxl: 4rem;
 
+// BUTTON SPACING
+$button-padding-y: 0.8125rem;
+$button-padding-x: 1.25rem;
+$button-radius: 0.375rem;
+
 // LAYOUT
 $container-max-width: 1200px;
 $content-max-width: 30rem;
-$border-radius: 8px;
+$subtitle-max-width: 30rem;
 
 // BREAKPOINTS
 $breakpoint-sm: 576px;
