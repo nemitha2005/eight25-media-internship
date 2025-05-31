@@ -5,9 +5,12 @@
   width: $icon-container-width;
   height: $icon-container-height;
   border-radius: $icon-container-radius;
-  background: linear-gradient(142.45deg, rgba(255, 255, 255, 0.7) -4.87%, rgba(255, 255, 255, 0) 160.41%);
-  box-shadow: 
-    0px 10px 20px 0px rgba(0, 42, 179, 0.1),
+  background: linear-gradient(
+    142.45deg,
+    rgba(255, 255, 255, 0.7) -4.87%,
+    rgba(255, 255, 255, 0) 160.41%
+  );
+  box-shadow: 0px 10px 20px 0px rgba(0, 42, 179, 0.1),
     1px 1px 0px 0px rgba(255, 255, 255, 0.15) inset;
   backdrop-filter: blur($icon-container-blur);
   display: flex;
@@ -15,54 +18,56 @@
   justify-content: center;
   z-index: 1;
 
+  // LEFT SIDE ICONS
   &--position-1 {
-    top: 58px;
-    left: 282px;
+    top: 188px;
+    left: 482px;
   }
 
   &--position-2 {
-    top: 195px;
-    left: 146px;
+    top: 325px;
+    left: 346px;
   }
 
   &--position-3 {
-    top: 331px;
-    left: 9px;
+    top: 461px;
+    left: 209px;
   }
 
   &--position-4 {
-    top: 466px;
-    left: 149px;
-  }
-
-  &--position-5 {
-    top: 331px;
-    left: 1313px;
-  }
-
-  &--position-6 {
-    top: 467px;
-    left: 1313px;
-  }
-
-  &--position-7 {
-    top: 331px;
-    left: 1177px;
-  }
-
-  &--position-8 {
-    top: 59px;
-    left: 1177px;
-  }
-
-  &--position-9 {
-    top: 195px;
-    left: 1041px;
+    top: 596px;
+    left: 349px;
   }
 
   &--position-10 {
-    top: 331px;
-    left: 282px;
+    top: 461px;
+    left: 482px;
+  }
+
+  // RIGHT SIDE ICONS
+  &--position-5 {
+    top: 461px;
+    left: 1588px;
+  }
+
+  &--position-6 {
+    top: 597px;
+    left: 1588px;
+  }
+
+  &--position-7 {
+    top: 461px;
+    left: 1452px;
+  }
+
+  &--position-8 {
+    top: 189px;
+    left: 1452px;
+  }
+
+  &--position-9 {
+    top: 325px;
+    left: 1316px;
   }
 
   img {
@@ -87,15 +92,25 @@
     &--position-10 {
       display: none;
     }
-    
+
     &--position-1 {
-      top: 80px;
-      left: 20px;
+      top: 15vh;
+      left: 2vw;
     }
-    
+
     &--position-3 {
-      top: 400px;
-      left: 20px;
+      top: 60vh;
+      left: 2vw;
+    }
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    &--position-1 {
+      left: 1vw;
+    }
+
+    &--position-3 {
+      left: 1vw;
     }
   }
 }
