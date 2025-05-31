@@ -1,0 +1,16 @@
+{
+  "name": "eight25-media",
+  "version": "1.0.0",
+  "description": "Eight25 Front-end (UI/UX) Internship Assignment",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch assets/scss:assets/css --style expanded",
+    "sass-compressed": "sass --watch assets/scss:assets/css --style compressed",
+    "build": "sass assets/scss:assets/css --style compressed"
+  },
+  "devDependencies": {
+    "sass": "^1.69.0"
+  },
+  "keywords": ["html", "scss", "javascript", "internship"],
+  "author": "Nemitha Wijerathna"
+}
