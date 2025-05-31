@@ -1,0 +1,101 @@
+@use "../abstracts/variables" as *;
+
+.icon-container {
+  position: absolute;
+  width: $icon-container-width;
+  height: $icon-container-height;
+  border-radius: $icon-container-radius;
+  background: linear-gradient(142.45deg, rgba(255, 255, 255, 0.7) -4.87%, rgba(255, 255, 255, 0) 160.41%);
+  box-shadow: 
+    0px 10px 20px 0px rgba(0, 42, 179, 0.1),
+    1px 1px 0px 0px rgba(255, 255, 255, 0.15) inset;
+  backdrop-filter: blur($icon-container-blur);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+
+  &--position-1 {
+    top: 58px;
+    left: 282px;
+  }
+
+  &--position-2 {
+    top: 195px;
+    left: 146px;
+  }
+
+  &--position-3 {
+    top: 331px;
+    left: 9px;
+  }
+
+  &--position-4 {
+    top: 466px;
+    left: 149px;
+  }
+
+  &--position-5 {
+    top: 331px;
+    left: 1313px;
+  }
+
+  &--position-6 {
+    top: 467px;
+    left: 1313px;
+  }
+
+  &--position-7 {
+    top: 331px;
+    left: 1177px;
+  }
+
+  &--position-8 {
+    top: 59px;
+    left: 1177px;
+  }
+
+  &--position-9 {
+    top: 195px;
+    left: 1041px;
+  }
+
+  &--position-10 {
+    top: 331px;
+    left: 282px;
+  }
+
+  img {
+    max-width: 60%;
+    max-height: 60%;
+    object-fit: contain;
+  }
+
+  @media (max-width: $breakpoint-lg) {
+    &--position-5,
+    &--position-6,
+    &--position-7,
+    &--position-8,
+    &--position-9 {
+      display: none;
+    }
+  }
+
+  @media (max-width: $breakpoint-md) {
+    &--position-2,
+    &--position-4,
+    &--position-10 {
+      display: none;
+    }
+    
+    &--position-1 {
+      top: 80px;
+      left: 20px;
+    }
+    
+    &--position-3 {
+      top: 400px;
+      left: 20px;
+    }
+  }
+}
