@@ -9,11 +9,11 @@
   @include section-spacing;
 
   &__container {
-    @include container;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: $spacing-xxl;
     align-items: center;
+    @include container;
   }
 
   &__content {
