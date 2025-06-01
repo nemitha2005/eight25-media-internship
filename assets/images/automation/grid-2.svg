@@ -1,0 +1,36 @@
+<svg width="333" height="107" viewBox="0 0 333 107" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_1_5436" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="712" height="629">
+<path d="M356 0.0880127C552.406 0.0880127 711.625 140.851 711.625 314.491C711.625 488.131 552.406 628.895 356 628.895C159.594 628.895 0.375 488.131 0.375 314.491C0.375 140.851 159.594 0.0880127 356 0.0880127Z" fill="url(#paint0_radial_1_5436)"/>
+</mask>
+<g mask="url(#mask0_1_5436)">
+<g clip-path="url(#clip0_1_5436)">
+<path d="M0.723423 551.577H0.132812V-63.7126H0.723423V551.577Z" fill="white"/>
+<path d="M26.368 551.577H25.7773V-63.7126H26.368V551.577Z" fill="white"/>
+<path d="M52.0003 551.577H51.4097V-63.7126H52.0003V551.577Z" fill="white"/>
+<path d="M77.6448 551.577H77.0542V-63.7126H77.6448V551.577Z" fill="white"/>
+<path d="M103.277 551.577H102.687V-63.7126H103.277V551.577Z" fill="white"/>
+<path d="M128.921 551.577H128.331V-63.7126H128.921V551.577Z" fill="white"/>
+<path d="M154.566 551.577H153.975V-63.7126H154.566V551.577Z" fill="white"/>
+<path d="M180.198 551.577H179.608V-63.7126H180.198V551.577Z" fill="white"/>
+<path d="M205.843 551.577H205.252V-63.7126H205.843V551.577Z" fill="white"/>
+<path d="M231.475 551.577H230.884V-63.7126H231.475V551.577Z" fill="white"/>
+<path d="M257.12 551.577H256.529V-63.7126H257.12V551.577Z" fill="white"/>
+<path d="M282.752 551.577H282.161V-63.7126H282.752V551.577Z" fill="white"/>
+<path d="M308.396 551.577H307.806V-63.7126H308.396V551.577Z" fill="white"/>
+<path d="M667.345 90.5725H0.428223V89.9826H667.345V90.5725Z" fill="white"/>
+<path d="M667.345 64.9683H0.428223V64.3783H667.345V64.9683Z" fill="white"/>
+<path d="M667.345 39.3524H0.428223V38.7625H667.345V39.3524Z" fill="white"/>
+<path d="M667.345 13.7488H0.428223V13.1588H667.345V13.7488Z" fill="white"/>
+<path d="M205.464 10.9995C206.645 10.9995 207.602 11.9556 207.602 13.1351C207.602 14.3146 206.645 15.2708 205.464 15.2708C204.284 15.2708 203.326 14.3146 203.326 13.1351C203.326 11.9556 204.284 10.9995 205.464 10.9995Z" fill="white"/>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_1_5436" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(356 314.536) scale(356 314)">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</radialGradient>
+<clipPath id="clip0_1_5436">
+<rect width="667.212" height="615.289" fill="white" transform="matrix(1 0 0 -1 0.132324 551.576)"/>
+</clipPath>
+</defs>
+</svg>
