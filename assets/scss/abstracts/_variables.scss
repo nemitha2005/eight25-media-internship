@@ -5,6 +5,14 @@ $color-secondary: #000743;
 $color-accent: #ff3366;
 $color-white: #ffffff;
 $color-text-light: #888888;
+$color-automation-button: #a86db7;
+
+// GRADIENTS
+$gradient-automation: linear-gradient(
+  125.27deg,
+  #ff59fc -32.83%,
+  #6b1065 44.71%
+);
 
 // TYPOGRAPHY
 $font-family-primary: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -14,7 +22,7 @@ $font-weight-medium: 500;
 $font-weight-bold: 700;
 
 // FONT SIZES
-$font-size-hero: 3.75rem;
+$font-size-head: 3.75rem;
 $font-size-subtitle: 1.25rem;
 $font-size-button: 1rem;
 
@@ -43,12 +51,23 @@ $icon-container-radius: 0.625rem;
 $icon-container-blur: 1.875rem;
 
 // LAYOUT
-$container-max-width: 1200px;
+$container-max-width: 1400px;
 $content-max-width: 30rem;
 $subtitle-max-width: 30rem;
+$automation-content-max-width: 50rem;
 
 // BREAKPOINTS
 $breakpoint-sm: 576px;
 $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
+
+// SCALING RATIOS
+$hero-font-scale-tablet: 0.67;
+$hero-font-scale-mobile: 0.53;
+$automation-font-scale-tablet: 0.8;
+$automation-font-scale-mobile: 0.6;
+$automation-font-scale-small: 0.5;
+
+// ICON SIZING
+$icon-content-ratio: 0.6;

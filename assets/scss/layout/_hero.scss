@@ -26,15 +26,15 @@
   }
 
   &__title {
-    font-size: $font-size-hero;
+    font-size: $font-size-head;
     margin-bottom: $spacing-md;
 
     @media (max-width: $breakpoint-md) {
-      font-size: calc($font-size-hero * 0.67);
+      font-size: calc($font-size-head * 0.67);
     }
 
     @media (max-width: $breakpoint-sm) {
-      font-size: calc($font-size-hero * 0.53);
+      font-size: calc($font-size-head * 0.53);
     }
   }
 
@@ -49,9 +49,9 @@
   }
 
   &__icons {
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     width: 100vw;
     height: 100vh;
     pointer-events: none;

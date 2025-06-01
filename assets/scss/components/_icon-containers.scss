@@ -2,8 +2,8 @@
 
 .icon-container {
   position: absolute;
-  width: clamp(3rem, $icon-container-width, 5rem);
-  height: clamp(3rem, $icon-container-height, 5rem);
+  width: clamp(4rem, $icon-container-width, 5rem);
+  height: clamp(4rem, $icon-container-height, 5rem);
   border-radius: $icon-container-radius;
   background: linear-gradient(
     142.45deg,
