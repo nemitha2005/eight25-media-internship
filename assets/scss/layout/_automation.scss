@@ -54,11 +54,4 @@
       text-align: center;
     }
   }
-
-  @media (max-width: $breakpoint-md) {
-    &__cta {
-      width: auto;
-      min-width: 200px;
-    }
-  }
 }
