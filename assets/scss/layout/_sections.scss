@@ -7,16 +7,16 @@
   align-items: center;
   justify-content: center;
   background-color: $color-white;
-  @include section-spacing;
   position: relative;
   overflow: hidden;
+  @include section-spacing;
 
   &__container {
-    @include container;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    @include container;
   }
 
   &__content {
