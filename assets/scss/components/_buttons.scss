@@ -22,6 +22,22 @@
     }
   }
 
+  &--secondary {
+    background-color: $color-button-secondary;
+    color: $color-white;
+    font-weight: $font-weight-bold;
+    letter-spacing: -0.02em;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba($color-button-secondary, 0.3);
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+  }
+
   &__arrow {
     margin-left: 0.7rem;
   }

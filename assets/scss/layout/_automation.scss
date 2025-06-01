@@ -21,53 +21,7 @@
   }
 
   &__title {
-    font-family: $font-family-primary;
-    font-weight: $font-weight-bold;
-    font-size: $font-size-head;
-    line-height: $line-height-tight;
-    color: $color-white;
     margin-bottom: $spacing-xl;
-
-    @media (max-width: $breakpoint-lg) {
-      font-size: calc($font-size-head * $automation-font-scale-tablet);
-    }
-
-    @media (max-width: $breakpoint-md) {
-      font-size: calc($font-size-head * $automation-font-scale-mobile);
-    }
-
-    @media (max-width: $breakpoint-sm) {
-      font-size: calc($font-size-head * $automation-font-scale-small);
-    }
-  }
-
-  &__cta {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: $color-automation-button;
-    color: $color-white;
-    font-family: $font-family-primary;
-    font-weight: $font-weight-bold;
-    font-size: $font-size-button;
-    line-height: $line-height-button;
-    letter-spacing: -0.02em;
-    border: none;
-    border-radius: $button-radius;
-    padding: $button-padding-y $button-padding-x;
-    gap: $spacing-sm;
-    cursor: pointer;
-    text-decoration: none;
-    transition: all 0.3s ease;
-
-    &:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 12px rgba($color-automation-button, 0.3);
-    }
-
-    &:active {
-      transform: translateY(0);
-    }
   }
 
   &__visual {

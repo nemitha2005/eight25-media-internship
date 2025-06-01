@@ -1,11 +1,18 @@
 // COLORS
-$color-heading: #000743;
-$color-primary: #000000;
-$color-secondary: #000743;
-$color-accent: #ff3366;
+$color-dark-blue: #000743;
+$color-black: #000000;
+$color-red: #ff3366;
 $color-white: #ffffff;
-$color-text-light: #888888;
-$color-automation-button: #a86db7;
+$color-gray: #888888;
+$color-purple: #a86db7;
+
+// SEMANTIC COLOR MAPPING
+$color-heading: $color-dark-blue;
+$color-primary: $color-black;
+$color-secondary: $color-dark-blue;
+$color-accent: $color-red;
+$color-text-light: $color-gray;
+$color-button-secondary: $color-purple;
 
 // GRADIENTS
 $gradient-automation: linear-gradient(

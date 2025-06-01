@@ -1,4 +1,5 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 body {
   font-family: $font-family-primary;
@@ -20,6 +21,44 @@ h6 {
 .text-heading {
   color: $color-heading;
   font-weight: $font-weight-bold;
+  font-size: $font-size-head;
+  line-height: $line-height-tight;
+
+  @include responsive-font(
+    $font-size-head,
+    calc($font-size-head * $hero-font-scale-tablet)
+  );
+
+  @media (max-width: $breakpoint-sm) {
+    font-size: calc($font-size-head * $hero-font-scale-mobile);
+  }
+}
+
+.text-heading--automation {
+  color: $color-white;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-head;
+  line-height: $line-height-tight;
+
+  @media (max-width: $breakpoint-lg) {
+    font-size: calc($font-size-head * $automation-font-scale-tablet);
+  }
+
+  @media (max-width: $breakpoint-md) {
+    font-size: calc($font-size-head * $automation-font-scale-mobile);
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    font-size: calc($font-size-head * $automation-font-scale-small);
+  }
+}
+
+.text-subtitle {
+  font-family: $font-family-primary;
+  font-size: $font-size-subtitle;
+  font-weight: $font-weight-normal;
+  color: $color-secondary;
+  line-height: $line-height-normal;
 }
 
 .text-body {
@@ -28,5 +67,5 @@ h6 {
 }
 
 .text-muted {
-  color: $color-secondary;
+  color: $color-text-light;
 }

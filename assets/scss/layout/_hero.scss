@@ -26,24 +26,10 @@
   }
 
   &__title {
-    font-size: $font-size-head;
     margin-bottom: $spacing-md;
-
-    @media (max-width: $breakpoint-md) {
-      font-size: calc($font-size-head * 0.67);
-    }
-
-    @media (max-width: $breakpoint-sm) {
-      font-size: calc($font-size-head * 0.53);
-    }
   }
 
   &__subtitle {
-    font-family: $font-family-primary;
-    font-size: $font-size-subtitle;
-    font-weight: $font-weight-normal;
-    color: $color-secondary;
-    line-height: $line-height-normal;
     max-width: $subtitle-max-width;
     margin: 0 auto $spacing-xl auto;
   }
