@@ -4,21 +4,24 @@
 
 .btn {
   @include button-base;
+  position: relative;
+  overflow: hidden;
+  transition: all $transition-standard;
 
   &--primary {
     background-color: $color-accent;
     color: $color-white;
-    box-shadow: 0px 4px 4px 0px rgba($color-primary, 0.25);
+    box-shadow: $shadow-button-primary;
 
     &:hover {
       background-color: color.adjust($color-accent, $lightness: -8%);
       transform: translateY(-2px);
-      box-shadow: 0 6px 12px rgba($color-accent, 0.3);
+      box-shadow: $shadow-button-hover;
     }
 
     &:active {
       transform: translateY(0);
-      box-shadow: 0px 2px 2px 0px rgba($color-primary, 0.25);
+      box-shadow: $shadow-button-active;
     }
   }
 
@@ -40,5 +43,35 @@
 
   &__arrow {
     margin-left: 0.7rem;
+    transition: transform $transition-fast;
+  }
+
+  &:hover &__arrow {
+    transform: translateX(2px);
+  }
+
+  &:focus-visible {
+    outline: 2px solid rgba($color-accent, 0.2);
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+
+    &:hover {
+      transform: none;
+    }
+
+    &:active {
+      transform: none;
+    }
+
+    .btn__arrow {
+      transition: none;
+    }
+
+    &:hover .btn__arrow {
+      transform: none;
+    }
   }
 }

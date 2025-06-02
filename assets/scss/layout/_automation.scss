@@ -16,7 +16,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.8;
+    opacity: $opacity-overlay;
     z-index: $z-content;
     pointer-events: none;
   }
@@ -32,7 +32,7 @@
     background-repeat: no-repeat;
     pointer-events: none;
     z-index: $z-background;
-    opacity: 0.5;
+    opacity: $opacity-grid;
 
     @media (max-width: $breakpoint-lg) {
       display: none;
@@ -50,6 +50,7 @@
     background-repeat: no-repeat;
     pointer-events: none;
     z-index: $z-background;
+    opacity: $opacity-grid;
 
     @media (max-width: $breakpoint-lg) {
       display: none;
@@ -58,7 +59,7 @@
 
   &__container {
     position: relative;
-    z-index: 10;
+    z-index: $z-content;
     @include container;
   }
 
@@ -108,6 +109,7 @@
     z-index: $z-modal;
   }
 
+  // Responsive Design
   @media (max-width: $breakpoint-lg) {
     &__container {
       display: flex;

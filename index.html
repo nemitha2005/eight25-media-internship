@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eight25 Internship Assignment</title>
+    <meta
+      name="description"
+      content="Eight25 Internship Assignment - Creative team tools and AI automation solutions"
+    />
+    <title>Eight25 Internship Assignment (FE)</title>
 
     <!-- Font preloading -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,16 +25,17 @@
     <!-- Main Content -->
     <main class="main-content">
       <!-- Hero Section -->
-      <section class="hero-section">
+      <section class="hero-section" aria-labelledby="hero-title">
         <div class="hero-section__container">
           <div class="hero-section__content">
-            <h1 class="hero-section__title text-heading">
+            <h1 id="hero-title" class="hero-section__title text-heading">
               Ideas Galore for<br />
               Your Creative<br />
               Team
             </h1>
             <p class="hero-section__subtitle text-subtitle">
-              Leverage our curated tools or build custom integrations
+              Leverage our curated tools or build custom <br />
+              integrations
             </p>
             <button class="btn btn--primary hero-section__cta">
               Discover Success Stories <span class="btn__arrow">></span>
@@ -38,7 +43,7 @@
           </div>
 
           <!-- Floating Icons -->
-          <div class="hero-section__icons">
+          <div class="hero-section__icons" aria-hidden="true">
             <div class="icon-container icon-container--position-1">
               <img
                 src="assets/images/icons/blackberry.png"
@@ -58,7 +63,7 @@
             <div class="icon-container icon-container--position-3">
               <img
                 src="assets/images/icons/checkpoint.png"
-                alt="check Point Software Technologies"
+                alt="Check Point Software Technologies"
                 class="floating-icon"
               />
             </div>
@@ -123,13 +128,16 @@
       </section>
 
       <!-- Automation Section -->
-      <section class="automation-section">
+      <section class="automation-section" aria-labelledby="automation-title">
         <div class="automation-section__grid-overlay-1"></div>
         <div class="automation-section__grid-overlay-2"></div>
 
         <div class="automation-section__container">
           <div class="automation-section__content">
-            <h2 class="automation-section__title text-heading--automation">
+            <h2
+              id="automation-title"
+              class="automation-section__title text-heading--automation"
+            >
               AI Automation:<br />
               Elevating Team Efficiency<br />
               and Scalability
@@ -143,7 +151,7 @@
         <div class="automation-section__visual">
           <img
             src="assets/images/automation/screen.png"
-            alt="Automation tablets"
+            alt="Automation tablets showing interface"
             class="automation-section__devices"
           />
         </div>

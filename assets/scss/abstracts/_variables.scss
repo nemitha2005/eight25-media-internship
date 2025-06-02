@@ -6,7 +6,7 @@ $color-white: #ffffff;
 $color-gray: #888888;
 $color-purple: #a86db7;
 
-// SEMANTIC COLOR MAPPING
+// SEMANTIC COLOR MAP
 $color-heading: $color-dark-blue;
 $color-primary: $color-black;
 $color-secondary: $color-dark-blue;
@@ -38,7 +38,11 @@ $line-height-tight: 1.1;
 $line-height-normal: 1.6;
 $line-height-button: 1.2;
 
-// SPACING
+// TRANSITIONS
+$transition-standard: 0.3s ease;
+$transition-fast: 0.2s ease;
+
+// SPACING SCALE
 $spacing-xs: 0.5rem;
 $spacing-sm: 1rem;
 $spacing-md: 1.5rem;
@@ -46,10 +50,17 @@ $spacing-lg: 2rem;
 $spacing-xl: 3rem;
 $spacing-xxl: 4rem;
 
-// BUTTON SPACING
+// COMPONENT SPACING
 $button-padding-y: 0.8125rem;
 $button-padding-x: 1.25rem;
 $button-radius: 0.375rem;
+
+// SHADOWS
+$shadow-button-primary: 0px 4px 4px 0px rgba($color-primary, 0.25);
+$shadow-button-hover: 0 6px 12px rgba($color-accent, 0.3);
+$shadow-button-active: 0px 2px 2px 0px rgba($color-primary, 0.25);
+$shadow-icon-container: 0px 10px 20px rgba($color-heading, 0.1),
+  1px 1px 0px rgba($color-white, 0.15) inset;
 
 // ICON CONTAINER STYLING
 $icon-container-width: 7.3125rem;
@@ -57,7 +68,7 @@ $icon-container-height: 7.25rem;
 $icon-container-radius: 0.625rem;
 $icon-container-blur: 1.875rem;
 
-// LAYOUT
+// LAYOUT CONSTRAINTS
 $container-max-width: 1400px;
 $content-max-width: 30rem;
 $subtitle-max-width: 30rem;
@@ -69,18 +80,19 @@ $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
 
-// SCALING RATIOS
+// RESPONSIVE SCALING RATIOS
 $hero-font-scale-tablet: 0.67;
 $hero-font-scale-mobile: 0.53;
 $automation-font-scale-tablet: 0.8;
 $automation-font-scale-mobile: 0.6;
 $automation-font-scale-small: 0.5;
 
-// ICON SIZING
-$icon-content-ratio: 0.6;
-
 // Z-INDEX SCALE
 $z-background: 1;
 $z-content: 10;
 $z-elevated: 20;
 $z-modal: 100;
+
+// OPACITY VALUES
+$opacity-overlay: 0.8;
+$opacity-grid: 0.5;
