@@ -1,0 +1,159 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.testimonials-section {
+  min-height: 100vh;
+  background-color: $color-white;
+  position: relative;
+  overflow: hidden;
+  @include section-spacing;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-image: url("../images/testimonials/glow-effect.png");
+    background-size: cover;
+    background-position: left center;
+    background-repeat: no-repeat;
+    z-index: $z-background;
+    pointer-events: none;
+  }
+
+  &__container {
+    position: relative;
+    z-index: $z-content;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include container;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $spacing-xxl;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+    transform: translateX(-70px);
+
+    @media (max-width: $breakpoint-lg) {
+      grid-template-columns: 1fr;
+      gap: $spacing-xl;
+      text-align: center;
+      transform: translateX(0);
+    }
+  }
+
+  &__title {
+    color: $color-heading;
+    font-weight: $font-weight-bold;
+    font-size: 3.75rem;
+    line-height: $line-height-tight;
+    margin-bottom: $spacing-lg;
+
+    @include responsive-font(3.75rem, 3rem);
+
+    @media (max-width: $breakpoint-md) {
+      font-size: 2.5rem;
+    }
+  }
+
+  &__testimonial {
+    color: $color-heading;
+    font-weight: $font-weight-normal;
+    font-size: 1.25rem;
+    white-space: nowrap;
+    line-height: $line-height-normal;
+    max-width: 660px;
+  }
+
+  &__badge-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  &__badge-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+
+  &__arrow {
+    position: absolute;
+    width: 40px;
+    height: 45px;
+    border: 2px solid transparent;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 3;
+
+    &--left {
+      left: -75px;
+      transform: translateY(-50%) rotate(180deg);
+    }
+
+    &--right {
+      right: -75px;
+      transform: translateY(-50%) rotate(180deg);
+    }
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  &__badge-blur {
+    position: absolute;
+    width: 340px;
+    height: 360px;
+    background: #ffffff;
+    opacity: 0.3;
+    border-radius: 25px;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__badge-card {
+    width: 320px;
+    height: 340px;
+    background: #ffffff;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 20px;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0px 20.09px 60.26px 0px rgba(0, 0, 0, 0.18);
+  }
+
+  &__badge-image {
+    width: 188px;
+    height: 157px;
+    object-fit: contain;
+  }
+
+  &__separator {
+    width: 240px;
+    height: 1px;
+    background: #c6d1db;
+  }
+
+  &__rating {
+    width: 172.4149932861328px;
+    height: 19.682998657226562px;
+    object-fit: contain;
+  }
+}
