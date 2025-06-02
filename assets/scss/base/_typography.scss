@@ -24,11 +24,6 @@ h6 {
   font-size: $font-size-head;
   line-height: $line-height-tight;
 
-  @include responsive-font(
-    $font-size-head,
-    calc($font-size-head * $hero-font-scale-tablet)
-  );
-
   @media (max-width: $breakpoint-sm) {
     font-size: calc($font-size-head * $hero-font-scale-mobile);
   }
@@ -58,11 +53,6 @@ h6 {
   font-weight: $font-weight-bold;
   font-size: $font-size-head;
   line-height: $line-height-tight;
-
-  @include responsive-font(
-    $font-size-head,
-    calc($font-size-head * $testimonials-font-scale-tablet)
-  );
 
   @media (max-width: $breakpoint-md) {
     font-size: calc($font-size-head * $testimonials-font-scale-mobile);
