@@ -16,7 +16,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: $opacity-overlay;
+    opacity: 0.8;
     z-index: $z-content;
     pointer-events: none;
   }
@@ -32,9 +32,9 @@
     background-repeat: no-repeat;
     pointer-events: none;
     z-index: $z-background;
-    opacity: $opacity-grid;
+    opacity: 0.5;
 
-    @media (max-width: $breakpoint-lg) {
+    @media (max-width: $breakpoint-xl) {
       display: none;
     }
   }
@@ -50,29 +50,17 @@
     background-repeat: no-repeat;
     pointer-events: none;
     z-index: $z-background;
-    opacity: $opacity-grid;
 
-    @media (max-width: $breakpoint-lg) {
+    @media (max-width: $breakpoint-xl) {
       display: none;
     }
   }
 
   &__container {
     position: relative;
-    z-index: $z-content;
-    @include container;
-  }
-
-  &__content {
-    max-width: $automation-content-max-width;
-    position: relative;
-    padding-top: $spacing-lg;
     z-index: $z-elevated;
-
-    @media (max-width: $breakpoint-lg) {
-      text-align: center;
-      max-width: 100%;
-    }
+    padding-top: $spacing-lg;
+    @include container;
   }
 
   &__title {
@@ -80,9 +68,10 @@
     margin-bottom: $spacing-xl;
     white-space: nowrap;
 
-    @media (max-width: $breakpoint-md) {
+    @media (max-width: $breakpoint-lg) {
       white-space: normal;
       text-align: center;
+      margin-bottom: $spacing-xs;
     }
   }
 
@@ -93,14 +82,11 @@
     width: 55%;
     height: 100%;
     pointer-events: none;
-    overflow: visible;
-    z-index: 15;
+    z-index: $z-content;
   }
 
   &__devices {
     position: absolute;
-    top: 0;
-    bottom: 0;
     right: 0;
     width: auto;
     height: 100%;
@@ -109,30 +95,21 @@
     z-index: $z-modal;
   }
 
-  // Responsive Design
   @media (max-width: $breakpoint-lg) {
     &__container {
       display: flex;
       flex-direction: column;
-      gap: $spacing-xl;
+      gap: $spacing-sm;
       align-items: center;
-    }
-
-    &__content {
-      order: 1;
     }
 
     &__visual {
       position: relative;
       width: 100%;
-      height: 400px;
-      top: auto;
-      right: auto;
+      height: 100px;
       display: flex;
       align-items: center;
       justify-content: center;
-      order: 2;
-      overflow: hidden;
     }
 
     &__devices {
@@ -141,23 +118,18 @@
       height: 100%;
       max-width: 500px;
       object-position: center;
-      z-index: $z-background;
-      margin-top: $spacing-lg;
+      margin-top: $spacing-xl;
     }
   }
 
   @media (max-width: $breakpoint-md) {
     &__visual {
-      height: 300px;
+      height: 400px;
     }
 
     &__devices {
       max-width: 400px;
-      margin-top: $spacing-lg;
-    }
-
-    &__content {
-      padding-top: $spacing-sm;
+      margin-top: $spacing-xl;
     }
 
     &__title {
@@ -173,10 +145,6 @@
     &__devices {
       max-width: 300px;
       margin-top: $spacing-lg;
-    }
-
-    &__content {
-      padding-top: $spacing-xs;
     }
 
     &__title {

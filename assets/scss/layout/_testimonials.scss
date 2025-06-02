@@ -21,6 +21,15 @@
     background-repeat: no-repeat;
     z-index: $z-background;
     pointer-events: none;
+
+    @media (max-width: $breakpoint-xl) {
+      width: 100%;
+      background-position: center center;
+    }
+
+    @media (max-width: $breakpoint-md) {
+      opacity: 0.8;
+    }
   }
 
   &__container {
@@ -51,26 +60,16 @@
   }
 
   &__title {
-    color: $color-heading;
-    font-weight: $font-weight-bold;
-    font-size: 3.75rem;
-    line-height: $line-height-tight;
     margin-bottom: $spacing-lg;
-
-    @include responsive-font(3.75rem, 3rem);
-
-    @media (max-width: $breakpoint-md) {
-      font-size: 2.5rem;
-    }
   }
 
   &__testimonial {
-    color: $color-heading;
-    font-weight: $font-weight-normal;
-    font-size: 1.25rem;
     white-space: nowrap;
-    line-height: $line-height-normal;
     max-width: 660px;
+
+    @media (max-width: $breakpoint-lg) {
+      white-space: normal;
+    }
   }
 
   &__badge-content {
@@ -93,7 +92,7 @@
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
-    z-index: 3;
+    z-index: $z-elevated;
 
     &--left {
       left: -75px;
@@ -108,52 +107,130 @@
     &:hover {
       opacity: 0.5;
     }
+
+    @media (max-width: $breakpoint-lg) {
+      width: 30px;
+      height: 35px;
+
+      &--left {
+        left: -50px;
+      }
+
+      &--right {
+        right: -50px;
+      }
+    }
+
+    @media (max-width: $breakpoint-md) {
+      width: 25px;
+      height: 30px;
+
+      &--left {
+        left: -35px;
+      }
+
+      &--right {
+        right: -35px;
+      }
+    }
   }
 
   &__badge-blur {
     position: absolute;
     width: 340px;
     height: 360px;
-    background: #ffffff;
+    background: $color-white;
     opacity: 0.3;
     border-radius: 25px;
-    z-index: 1;
+    z-index: $z-background;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @media (max-width: $breakpoint-lg) {
+      width: 280px;
+      height: 300px;
+    }
+
+    @media (max-width: $breakpoint-md) {
+      width: 240px;
+      height: 260px;
+    }
   }
 
   &__badge-card {
     width: 320px;
     height: 340px;
-    background: #ffffff;
+    background: $color-white;
     border: none;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 40px;
-    padding: 40px 20px;
+    padding: 40px;
     position: relative;
-    z-index: 2;
-    box-shadow: 0px 20.09px 60.26px 0px rgba(0, 0, 0, 0.18);
+    z-index: $z-content;
+    box-shadow: 0px 20.09px 60.26px 0px rgba($color-primary, 0.18);
+
+    @media (max-width: $breakpoint-lg) {
+      width: 260px;
+      height: 280px;
+      gap: 30px;
+      padding: 30px 15px;
+    }
+
+    @media (max-width: $breakpoint-md) {
+      width: 220px;
+      height: 240px;
+      gap: 25px;
+      padding: 25px 15px;
+    }
   }
 
   &__badge-image {
     width: 188px;
     height: 157px;
     object-fit: contain;
+
+    @media (max-width: $breakpoint-lg) {
+      width: 150px;
+      height: 125px;
+    }
+
+    @media (max-width: $breakpoint-md) {
+      width: 120px;
+      height: 100px;
+    }
   }
 
   &__separator {
     width: 240px;
     height: 1px;
-    background: #c6d1db;
+    background: $color-text-light;
+
+    @media (max-width: $breakpoint-lg) {
+      width: 200px;
+    }
+
+    @media (max-width: $breakpoint-md) {
+      width: 160px;
+    }
   }
 
   &__rating {
-    width: 172.4149932861328px;
-    height: 19.682998657226562px;
+    width: 170px;
+    height: 20px;
     object-fit: contain;
+
+    @media (max-width: $breakpoint-lg) {
+      width: 140px;
+      height: 16px;
+    }
+
+    @media (max-width: $breakpoint-md) {
+      width: 120px;
+      height: 14px;
+    }
   }
 }

@@ -53,6 +53,22 @@ h6 {
   }
 }
 
+.text-heading--testimonials {
+  color: $color-heading;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-head;
+  line-height: $line-height-tight;
+
+  @include responsive-font(
+    $font-size-head,
+    calc($font-size-head * $testimonials-font-scale-tablet)
+  );
+
+  @media (max-width: $breakpoint-md) {
+    font-size: calc($font-size-head * $testimonials-font-scale-mobile);
+  }
+}
+
 .text-subtitle {
   font-family: $font-family-primary;
   font-size: $font-size-subtitle;
@@ -62,7 +78,7 @@ h6 {
 }
 
 .text-body {
-  color: $color-primary;
+  color: $color-secondary;
   font-weight: $font-weight-normal;
 }
 

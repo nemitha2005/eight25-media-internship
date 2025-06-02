@@ -22,7 +22,7 @@
   &__content {
     text-align: center;
     max-width: $content-max-width;
-    z-index: 2;
+    z-index: $z-content;
   }
 
   &__title {
@@ -30,7 +30,6 @@
   }
 
   &__subtitle {
-    max-width: $subtitle-max-width;
     margin: 0 auto $spacing-xl auto;
   }
 
@@ -41,6 +40,6 @@
     width: 100vw;
     height: 100vh;
     pointer-events: none;
-    z-index: 1;
+    z-index: $z-background;
   }
 }
