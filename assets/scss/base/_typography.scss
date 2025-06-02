@@ -24,8 +24,16 @@ h6 {
   font-size: $font-size-head;
   line-height: $line-height-tight;
 
+  @media (max-width: $breakpoint-lg) {
+    font-size: calc($font-size-head * 0.67);
+  }
+
+  @media (max-width: $breakpoint-md) {
+    font-size: calc($font-size-head * 0.53);
+  }
+
   @media (max-width: $breakpoint-sm) {
-    font-size: calc($font-size-head * $hero-font-scale-mobile);
+    font-size: calc($font-size-head * 0.4);
   }
 }
 
@@ -36,15 +44,15 @@ h6 {
   line-height: $line-height-tight;
 
   @media (max-width: $breakpoint-lg) {
-    font-size: calc($font-size-head * $automation-font-scale-tablet);
+    font-size: calc($font-size-head * 0.8);
   }
 
   @media (max-width: $breakpoint-md) {
-    font-size: calc($font-size-head * $automation-font-scale-mobile);
+    font-size: calc($font-size-head * 0.6);
   }
 
   @media (max-width: $breakpoint-sm) {
-    font-size: calc($font-size-head * $automation-font-scale-small);
+    font-size: calc($font-size-head * 0.5);
   }
 }
 
@@ -54,8 +62,27 @@ h6 {
   font-size: $font-size-head;
   line-height: $line-height-tight;
 
+  @media (max-width: $breakpoint-lg) {
+    font-size: calc($font-size-head * 0.8);
+  }
+
   @media (max-width: $breakpoint-md) {
-    font-size: calc($font-size-head * $testimonials-font-scale-mobile);
+    font-size: calc($font-size-head * 0.67);
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    font-size: calc($font-size-head * 0.4);
+  }
+}
+
+.text-heading--connect {
+  color: $color-white;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-xl;
+  line-height: $line-height-tight;
+
+  @media (max-width: $breakpoint-lg) {
+    font-size: calc($font-size-xl * 0.9);
   }
 }
 

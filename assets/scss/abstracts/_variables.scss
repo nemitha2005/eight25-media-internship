@@ -34,6 +34,7 @@ $font-weight-medium: 500;
 $font-weight-bold: 700;
 
 // FONT SIZES
+$font-size-xl: 5rem;
 $font-size-head: 3.75rem;
 $font-size-subtitle: 1.25rem;
 $font-size-button: 1rem;
@@ -60,15 +61,6 @@ $breakpoint-sm: 576px;
 $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
-
-// RESPONSIVE SCALING RATIOS
-$hero-font-scale-tablet: 0.67;
-$hero-font-scale-mobile: 0.53;
-$automation-font-scale-tablet: 0.8;
-$automation-font-scale-mobile: 0.6;
-$automation-font-scale-small: 0.5;
-$testimonials-font-scale-tablet: 0.8;
-$testimonials-font-scale-mobile: 0.67;
 
 // Z-INDEX SCALE
 $z-background: 1;
