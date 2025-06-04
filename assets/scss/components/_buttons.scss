@@ -3,10 +3,10 @@
 @use "sass:color";
 
 .btn {
-  @include button-base;
   position: relative;
   overflow: hidden;
   transition: all $transition-standard;
+  @include button-base;
 
   &--primary {
     background-color: $color-accent;

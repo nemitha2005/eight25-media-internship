@@ -147,17 +147,16 @@ h6 {
   color: #000743;
   line-height: 1.6;
 }
-
-.text-body {
-  color: #000743;
-  font-weight: 400;
-}
-
-.text-muted {
-  color: #c6d1db;
+@media (max-width: 992px) {
+  .text-subtitle {
+    font-size: 0.875rem;
+  }
 }
 
 .btn {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -171,13 +170,15 @@ h6 {
   text-decoration: none;
   cursor: pointer;
   transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-  transition: all 0.3s ease;
 }
 .btn:focus {
   outline: 2px solid rgba(0, 0, 0, 0.2);
   outline-offset: 2px;
+}
+@media (max-width: 576px) {
+  .btn {
+    font-size: 0.875rem;
+  }
 }
 .btn--primary {
   background-color: #ff3366;
@@ -726,6 +727,9 @@ h6 {
 @media (max-width: 992px) {
   .testimonials-section__testimonial {
     white-space: normal;
+  }
+  .testimonials-section__testimonial br {
+    display: none;
   }
 }
 .testimonials-section__badge-content {

@@ -92,13 +92,8 @@ h6 {
   font-weight: $font-weight-normal;
   color: $color-secondary;
   line-height: $line-height-normal;
-}
 
-.text-body {
-  color: $color-secondary;
-  font-weight: $font-weight-normal;
-}
-
-.text-muted {
-  color: $color-text-light;
+  @media (max-width: $breakpoint-lg) {
+    font-size: calc($font-size-subtitle * 0.7);
+  }
 }

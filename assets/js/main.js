@@ -1,8 +1,8 @@
-// button effects and animations
 document.addEventListener("DOMContentLoaded", function () {
   initializeButtonEffects();
   initializeAnimations();
   initializeIconAnimations();
+  initializeScrollAnimations();
 });
 
 function initializeButtonEffects() {
@@ -104,13 +104,40 @@ function addAnimationStyles() {
 function initializeEntranceAnimations() {
   const heroTitle = document.querySelector(".hero-section__title");
   const heroSubtitle = document.querySelector(".hero-section__subtitle");
-  const heroButton = document.querySelector(".hero-section__cta");
+  const heroButton = document.querySelector(".hero-section .btn");
 
   if (heroTitle) heroTitle.classList.add("animate-fade-in-up");
   if (heroSubtitle)
     heroSubtitle.classList.add("animate-fade-in-up", "animate-delay-1");
   if (heroButton)
     heroButton.classList.add("animate-fade-in-up", "animate-delay-2");
+}
+
+function initializeScrollAnimations() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const titles = entry.target.querySelectorAll("h1, h2, h3, h4, h5, h6");
+        const texts = entry.target.querySelectorAll("p");
+        const buttons = entry.target.querySelectorAll(".btn");
+
+        titles.forEach((el) => el.classList.add("animate-fade-in-up"));
+        texts.forEach((el) =>
+          el.classList.add("animate-fade-in-up", "animate-delay-1")
+        );
+        buttons.forEach((el) =>
+          el.classList.add("animate-fade-in-up", "animate-delay-2")
+        );
+
+        observer.unobserve(entry.target);
+      }
+    });
+  });
+
+  const sections = document.querySelectorAll(
+    ".automation-section, .testimonials-section, .connect-section"
+  );
+  sections.forEach((section) => observer.observe(section));
 }
 
 function initializeIconAnimations() {
