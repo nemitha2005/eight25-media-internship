@@ -769,10 +769,10 @@ h6 {
     height: 35px;
   }
   .testimonials-section__arrow--left {
-    left: -50px;
+    left: -75px;
   }
   .testimonials-section__arrow--right {
-    right: -50px;
+    right: -75px;
   }
 }
 @media (max-width: 768px) {
@@ -781,10 +781,10 @@ h6 {
     height: 30px;
   }
   .testimonials-section__arrow--left {
-    left: -35px;
+    left: -45px;
   }
   .testimonials-section__arrow--right {
-    right: -35px;
+    right: -45px;
   }
 }
 .testimonials-section__badge-blur {
