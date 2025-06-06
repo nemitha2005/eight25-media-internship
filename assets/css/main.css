@@ -260,43 +260,43 @@ h6 {
 }
 .icon-container--position-1 {
   top: 20%;
-  left: 25%;
+  left: 22%;
 }
 .icon-container--position-2 {
   top: 35%;
-  left: 18%;
+  left: 15%;
 }
 .icon-container--position-3 {
   top: 50%;
-  left: 11%;
+  left: 8%;
 }
 .icon-container--position-4 {
   top: 65%;
-  left: 18%;
+  left: 15%;
 }
 .icon-container--position-5 {
   top: 50%;
-  right: 11%;
+  right: 8%;
 }
 .icon-container--position-6 {
   top: 65%;
-  right: 11%;
+  right: 8%;
 }
 .icon-container--position-7 {
   top: 50%;
-  right: 18%;
+  right: 15%;
 }
 .icon-container--position-8 {
   top: 20%;
-  right: 18%;
+  right: 15%;
 }
 .icon-container--position-9 {
   top: 35%;
-  right: 25%;
+  right: 22%;
 }
 .icon-container--position-10 {
   top: 50%;
-  left: 25%;
+  left: 22%;
 }
 @media (max-width: 992px) {
   .icon-container {
